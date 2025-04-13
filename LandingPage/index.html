@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Digital Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #f05a28;
+            padding: 1rem 2rem;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            padding: 100px 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("image-copy.png") no-repeat center center/cover;
+            opacity: 0.6;
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #f05a28;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background: linear-gradient(90deg, #f05a28, #ec008c);
+            color: white;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .about {
+            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .about img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .service-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service {
+            max-width: 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .more-content {
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Creative Digital Agency</div>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#more">More</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="hero">
+    <h1>Creative Digital Agency</h1>
+    <p>Your partner for amazing digital experiences</p>
+    <button class="btn">Read More</button>
+    <button class="btn">Request a Consult</button>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h3>Launch Business</h3>
+        <p>Start your journey with our tailored solutions.</p>
+    </div>
+    <div class="feature">
+        <h3>Online Support Team</h3>
+        <p>24/7 support to help your business grow.</p>
+    </div>
+    <div class="feature">
+        <h3>Time Management</h3>
+        <p>Optimize your time with our smart tools.</p>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div>
+        <h2>About Us</h2>
+        <p>15 years, we’re passionate about achieving better results for our clients. Our experience and innovative approach ensure that your business stands out from the rest. Let us help you bring your ideas to life.</p>
+        <button class="btn">Read More</button>
+    </div>
+    <img src="/image.jpg" alt="Team Member">
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+        <div class="service">
+            <h4>User Experience</h4>
+            <p>Designs that put your users first.</p>
+        </div>
+        <div class="service">
+            <h4>Creative Design</h4>
+            <p>Innovative visuals to captivate your audience.</p>
+        </div>
+        <div class="service">
+            <h4>Retina Ready</h4>
+            <p>Sharp, high-resolution design for all devices.</p>
+        </div>
+    </div>
+</section>
+
+<section class="more-content" id="more">
+    <h2 style="text-align:center; margin-bottom: 30px;">Our aim</h2>
+    <p>At the heart of our business is a passion that has driven us for over 15 years—helping our clients achieve outstanding results. Our aim is to combine experience with innovation to deliver creative, impactful solutions that set your business apart. We’re committed to turning your ideas into reality and supporting your success every step of the way.</p>
+    <br>
+    
+</section>
+
+<footer id="contact">
+    <p>&copy; 2025 Creative Digital Agency. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
