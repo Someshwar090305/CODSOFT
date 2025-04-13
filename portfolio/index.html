@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; }
+    html { scroll-behavior: smooth; }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: #f8f9fd;
+    }
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { max-width: 600px; margin: 1rem auto; font-size: 1.1rem; }
+    .hero img { max-width: 500px; margin-top: 20px; }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about img {
+      float: left;
+      margin-right: 20px;
+      width: 150px;
+      border-radius: 10px;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .skills li {
+      background: #eee;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 10px;
+      background: #fff;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .resume a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #6c63ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">&lt; Someshwar T E /&gt;</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi all I'm Someshwar T E 👋</h1>
+    <p>A passionate Full Stack Developer 🚀 experienced in building web and mobile apps using JavaScript / Reactjs / Nodejs / React Native and more.</p>
+   
+  </section>
+
+  <section id="about" class="about">
+    
+    <h2>About Me</h2>
+    <p>I'm a Full Stack Developer with a passion for building seamless digital experiences from front to back. With a strong foundation in both client-side and server-side technologies, I specialize in designing, developing, and deploying scalable web applications that are not only functional but also user-friendly and performant.
+
+        Proficient in technologies like JavaScript, React, Node.js, Express, Python, and databases like MongoDB and PostgreSQL, I enjoy working across the entire stack to bring ideas to life. I thrive in collaborative environments and love solving complex problems with clean, efficient code.
+        
+        Whether it's crafting pixel-perfect UI components or architecting robust backend systems, I'm always up for the challenge—and constantly learning to stay ahead in this ever-evolving tech landscape.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>HTML & CSS</li>
+      <li>MongoDB</li>
+      <li>Git & GitHub</li>
+      <li>React Native</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="Screenshot 2025-04-06 204308.png" alt="Project 1">
+      <h3>VAL</h3>
+      <p>A crowdsourced disaster information aggregation platform that collects, verifies, and visualizes real-time data from the public during emergencies. It enables users to report incidents, share updates, and access critical information—such as road blockages, shelter availability, and resource needs—helping communities and responders make faster, more informed decisions during disasters.
+
+      </p>
+    </div>
+    <div class="project">
+      <img src="cibil-score-1735036415.jpg" alt="Project 2">
+      <h3>CIBIL Score Predictor</h3>
+      <p>A machine learning-based credit score prediction model designed to estimate an individual's CIBIL score using financial and demographic data. The model analyzes patterns in credit history, loan behavior, and payment records to provide accurate score predictions, assisting financial institutions in risk assessment and informed lending decisions.</p>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <a href="Someshwar T E Resume .pdf" download>Download My Resume</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: te.someshwar@gmail.com</p>
+    <p>Phone: +91 99401 74942</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Someshwar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
